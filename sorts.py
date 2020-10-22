@@ -1,5 +1,6 @@
 Сюда пишем сортировки свои:
 
+
 #Alimaskina
 def cnt_sort(lst, mx):
     hlp = [0 for i in range(mx+1)]
@@ -10,4 +11,13 @@ def cnt_sort(lst, mx):
         res += [i for j in range(hlp[i])]
         
     return res
+
+
+#Koldubaeva:
+def bubble_sort(lst):
+	for i in range(len(lst)):
+    		for j in range(len(lst) - 1):
+        		if lst[j] > lst[j + 1]:
+            			lst[j], lst[j+1] = lst[j+1], lst[j]
+	return lst
 
